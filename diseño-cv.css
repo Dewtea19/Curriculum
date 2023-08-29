@@ -8,7 +8,7 @@ body,header,main,.columna-derecha,.columna-izquierda,footer{
 	display: flex
 }
 body{
-	max-width: 600px;
+	max-width: 600px; /* este es el principal problema, al usar medidas fijas hacés que el body quede marginado a la izquierda, si quitamos esta propiedad vas a ver que todo empieza a abarcar la totalidad de la página */
 	flex-direction: column;
 	justify-content: space-evenly;
 	flex-wrap: nowrap;
@@ -33,12 +33,12 @@ img{
 }
 .subtitulo{
 	font-weight: 300;
-	font-size: 14px;
+	font-size: 14px; /* tu tp va muy bien, te invito a investigar sobre los tamaños de tipografías en em, es el sistema de medida, lo podés buscar como "em font size". si no llegás a poder dominarlo, segupi trabajando en píxeles */
 	margin: 5%
 }
 main{
 	
-}
+} /* no dejes selectores vacíos!! de todos modos, este main es super útil, si le agregás alguna propiedad de flex para que se centre el contenido vas a ver que el diseño va mejorando mucho*/
 .columna-derecha{
 	color:#27020B;
 	font-size: 10px;
@@ -49,9 +49,9 @@ main{
 	color:#ffffff;
 	font-size: 10px;
 	background-color: #EF7965;
-	max-width: 237px;
-	max-height: 430px;
-	padding: 50px,50px,36px,36px;
+	max-width: 237px; 
+	max-height: 430px; /* esta propiedad en general no se usa porque todo lo que es tamaños de altos se los da el contenido mismo, si lo quitás todo se va a seguir viendo igual */
+	padding: 50px,50px,36px,36px; /* los valores no llevan comas, el espacio es suficiente para separarlos*/
 	flex-direction: column;
 }
 .titulos-derecha{
