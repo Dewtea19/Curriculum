@@ -39,6 +39,9 @@ main{
 	justify-content: center;
 	align-items: flex-start;
 }
+li{
+	line-height: 1.7em;
+}
 .columna-derecha article{
 	margin: 4% 0% 4% 0%;
 }
