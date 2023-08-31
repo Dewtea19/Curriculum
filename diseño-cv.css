@@ -2,72 +2,85 @@
 	margin: 0;
 	padding: 0;
 	list-style-type: none;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato','Raleway','Roboto',sans-serif; 
 }
 body,header,main,.columna-derecha,.columna-izquierda,footer{
 	display: flex
 }
 body{
-	max-width: 600px;
 	flex-direction: column;
-	justify-content: space-evenly;
+	justify-content: center;
 	flex-wrap: nowrap;
 }
 header{
 	color:#ffffff;
 	background-color: #FFA593;
-	max-height: 225px;
-	padding-bottom: 23px;
 	justify-content: center;
 	align-items: center;
 }
-img{
+img, .columna-izquierda{
 	border:solid;
 	border-color:#EF7965;
-	border-width: 34px;
+	border-width: 45px;
+}
+div{
+	max-width: 320px;
+	margin:5%;
 }
 #nombre{
 	font-weight: 900;
-	font-size: 40px;
-	margin: 5%
+	font-size: 2.5em;
 }
 .subtitulo{
 	font-weight: 300;
-	font-size: 14px;
-	margin: 5%
+	font-size: 0.9em;
 }
 main{
-	
+	justify-content: center;
+	align-items: flex-start;
+}
+.columna-derecha article{
+	margin: 4% 0% 4% 0%;
+}
+.columna-izquierda article{
+	margin: 7% 0% 7% 0%;
+}
+.columna-derecha, .columna-izquierda{
+	font-size:0.8em;
+	flex-direction: column;
+	align-content: space-around;
 }
 .columna-derecha{
 	color:#27020B;
-	font-size: 10px;
-	flex-direction: column;
-	
+	max-width: 320px;
+	margin: 3% 5% 0% 5%;
 }
 .columna-izquierda{
 	color:#ffffff;
-	font-size: 10px;
-	background-color: #EF7965;
-	max-width: 237px;
-	max-height: 430px;
-	padding: 50px,50px,36px,36px;
-	flex-direction: column;
+	background-color:#EF7965;
+	max-width: 170px;
 }
-.titulos-derecha{
+.titulos-derecha, .titulos-izquierda{
 	color:#27020B;
 	font-family: 'Raleway', sans-serif;
+	margin-bottom: 3%;
 }
 .titulos-izquierda{
-	color:#27020B;
-	font-family: 'Raleway', sans-serif;
-	font-weight: 600;
-	
+	font-weight: 400;
+	font-style: italic;
+	font-size: 1.7em;
+}
+.titulos-derecha{
+	font-weight:700;
+	font-size: 1.3em;
 }
 footer{
+	font-style: italic;
 	color:#27020B;
 	background-color: #FFA593;
-	height: 38px;
 	justify-content: center;
 	align-items: center;
+	border:solid;
+	border-color:#FFA593;
+	border-width: 18px;
 }
